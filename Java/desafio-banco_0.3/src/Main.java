@@ -7,7 +7,8 @@ public class Main {
         ---Menu de opções
         Visualização do saldo
         Enviar valor
-        Receber valor */
+        Receber valor
+        teste*/
         Scanner leitura = new Scanner(System.in);
         double saldoConta = 0;
         String tipoConta = "";
