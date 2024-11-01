@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,5 +16,11 @@ public class Principal {
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
 
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2004);
+        lost.setEpisodiosPorTemporada(16);
+        lost.setTemporadas(6);
+        lost.exibeFichaTecnica();
     }
 }
