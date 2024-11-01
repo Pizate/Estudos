@@ -1,10 +1,12 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme(); // Tipo Referencia
-        meuFilme.nome = "O Poderoso Chefinho";
-        meuFilme.anoDeLancamento = 2017;
-        meuFilme.duracaoEmMinutos = 107;
-        meuFilme.incluidoNoPlano = true;
+        meuFilme.setNome("O Poderoso Chefinho");
+        meuFilme.setAnoDeLancamento(2017);
+        meuFilme.setDuracaoEmMinutos(107);
+        meuFilme.setIncluidoNoPlano(true);
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
