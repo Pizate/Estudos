@@ -4,9 +4,9 @@ public class Titulo {
     public String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
-    private double somaDasAvaliacoes;
-    private int totalDeAvaliacoes;
-    private int duracaoEmMinutos;
+    private double somaDasAvaliacoes = 0;
+    private int totalDeAvaliacoes = 0;
+    private int duracaoEmMinutos = 0;
 
     public boolean isIncluidoNoPlano() {
         return incluidoNoPlano;
