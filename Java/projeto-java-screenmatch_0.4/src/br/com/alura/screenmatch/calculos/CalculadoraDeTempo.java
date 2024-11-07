@@ -1,24 +1,26 @@
+//Pacotes
 package br.com.alura.screenmatch.calculos;
 
-import br.com.alura.screenmatch.modelos.Filme;
-import br.com.alura.screenmatch.modelos.Serie;
+//Importações
 import br.com.alura.screenmatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {
+    //Classes
     private int tempoTotal = 0;
 
+    //Getters
     public int getTempoTotal() {
         return this.tempoTotal;
     }
+    /*    public void inclui(Filme f){
+        this.tempoTotal += f.getDuracaoEmMinutos();
+    }
+    public void inclui(Serie s){
+        this.tempoTotal += s.getDuracaoEmMinutos();
+    }*/
 
-//    public void inclui(Filme f){
-//        this.tempoTotal += f.getDuracaoEmMinutos();
-//    }
-//    public void inclui(Serie s){
-//        this.tempoTotal += s.getDuracaoEmMinutos();
-//    }
+    //Void's
     public void inclui(Titulo titulo){
         this.tempoTotal += titulo.getDuracaoEmMinutos();
     }
-
 }
