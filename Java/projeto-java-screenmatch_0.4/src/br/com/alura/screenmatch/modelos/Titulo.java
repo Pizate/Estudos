@@ -15,6 +15,14 @@ public class Titulo {
     private int totalDeAvaliacoes = 0;
 
 
+    //Constructor
+
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     // Gettters - Classes
     public String getNome() {
         return nome;

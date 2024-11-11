@@ -1,4 +1,4 @@
-//Importações
+package br.com.alura.screenmatch.principal;//Importações
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme(); // Tipo Referencia
-        meuFilme.setNome("O Poderoso Chefinho");
-        meuFilme.setAnoDeLancamento(2017);
+        Filme meuFilme = new Filme("O Poderoso Chefinho", 2017); // Tipo Referencia
+        //meuFilme.setNome("O Poderoso Chefinho");
+        //meuFilme.setAnoDeLancamento(2017);
         meuFilme.setDuracaoEmMinutos(107);
         meuFilme.setIncluidoNoPlano(true);
 
@@ -21,18 +21,18 @@ public class Principal {
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2004);
+        Serie lost = new Serie("Lost",2004);
+        //lost.setNome("Lost");
+        //lost.setAnoDeLancamento(2004);
         lost.setEpisodiosPorTemporada(16);
         lost.setTemporadas(6);
         lost.setMinutosPorEpisodio(50);
         lost.exibeFichaTecnica();
         System.out.println("Duração para maratonar lost: " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Avatar");
-        outroFilme.setAnoDeLancamento(2023);
+        Filme outroFilme = new Filme("Avatar",2023);
+        //outroFilme.setNome("Avatar");
+        //outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -50,10 +50,10 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeTeste = new Filme();
+        var filmeTeste = new Filme("Teste",2003); //Constructor
         filmeTeste.setDuracaoEmMinutos(200);
-        filmeTeste.setNome("Teste");
-        filmeTeste.setAnoDeLancamento(2003);
+        //filmeTeste.setNome("Teste");
+        //filmeTeste.setAnoDeLancamento(2003);
         filmeTeste.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
