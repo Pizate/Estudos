@@ -1,12 +1,10 @@
+//pacotes
 package br.com.alura.screenmatch.principal;
-
+//imports
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class PrincipalComListas {
 
         Filme f1 = filmeTeste;
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(filmeTeste);
         lista.add(meuFilme);
         lista.add(outroFilme);
@@ -43,6 +41,11 @@ public class PrincipalComListas {
         System.out.println(buscaPorArtista);
         Collections.sort(lista);
         System.out.println(lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordenando por ano");
+        System.out.println(lista);
+
 
     }
 }
